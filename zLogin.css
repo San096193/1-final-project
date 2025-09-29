@@ -1,0 +1,115 @@
+/* General style */
+body {
+  font-family:  Noto Sans Khmer, Arial, sans-serif;
+  background: rgb(207, 244, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 10%;
+}
+
+.login-box {
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 40%;
+  padding: 50px;
+}
+
+input {
+  width: 90%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 95%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: black;
+  color: white;
+}
+
+.signup-btn {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.telegram-btn {
+  background: #2aabee;
+  color: white;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+/* ===================== */
+/* Responsive Design     */
+/* ===================== */
+
+/* Mobile: 0 - 480px */
+@media(max-width:489px){
+  
+  .login-box {
+    width: 90%;
+    padding: 50px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  /* 1
+   */
+button {
+  width: 95%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+a {
+  display: block;
+  margin-top:10px;
+  margin-bottom: 0px;
+  color: #333;
+  text-decoration: none;
+}
+
+
+}
+
+/* Tablet: 481px - 768px */
+@media screen and (min-width: 490px) and (max-width: 1279px){
+
+  .login-box {
+    width: 70%;
+    padding: 50px;
+  }
+
+  input, button {
+    font-size: 15px;
+    padding: 13px;
+  }
+}
+
+/* Laptop/Desktop: default is already applied (30%) */

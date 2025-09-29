@@ -1,0 +1,199 @@
+/* ===================== */
+/* General style (your base) */
+/* ===================== */
+body {
+font-family:  Noto Sans Khmer, Arial, sans-serif;
+  background: rgb(207, 244, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+
+.login-box,
+.signup-box {
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 40%;
+  padding: 50px;
+}
+
+input {
+  width: 90%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 95%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: black;
+  color: white;
+}
+
+.confirm-btn {
+  background: #0d2f2b; /* dark green confirm */
+  color: white;
+}
+
+.signup-btn {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.telegram-btn {
+  background: #2aabee;
+  color: white;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+/* ===================== */
+/* Signup-specific extra */
+/* ===================== */
+.signup-logo img {
+  width: 10%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.signup-logo h2 {
+  margin: 15px 0 20px;
+}
+
+/* input with icons */
+.input-group {
+  position: relative;
+  width: 90%;
+
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 4% 2% 3% 10%; 
+  /* left padding for icon  */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* name fields row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.input-row input {
+  flex: 1;
+ 
+  padding: 4% 2% 3% 10%; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* OR  */
+.signup-or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #777;
+}
+
+.signup-or::before,
+.signup-or::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.signup-or:not(:empty)::before {
+  margin-right: .75em;
+}
+
+.signup-or:not(:empty)::after {
+  margin-left: .75em;
+}
+
+/* ===================== */
+/* Responsive Design     */
+/* ===================== */
+
+/* Mobile: 0 - 480px */
+@media(max-width:489px){
+
+  .login-box,
+  .signup-box {
+    width: 70%;
+    padding: 30px;
+  }
+
+  input, button {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  button {
+    width: 95%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* Tablet: 490px - 1279px */
+@media screen and (min-width: 490px) and (max-width: 1279px){
+
+  .login-box,
+  .signup-box {
+    width: 70%;
+    padding: 40px;
+  }
+
+  input, button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+
+
+/* Laptop/Desktop: default already applied */

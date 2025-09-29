@@ -1,0 +1,374 @@
+/* Contact Page Styles */
+/* Profile Section */
+.profile-section {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #03715d;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h3 {
+  color: #03715d;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.profile-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-info, .business-hours {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .business-hours h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: rgb(225, 244, 242);
+}
+
+.contact-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.contact-item strong {
+  color: #03715d;
+  font-weight: bold;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item a:hover {
+  text-decoration: none;
+  color: #03715d;
+}
+
+/* Social Media Section */
+.social-media-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.social-media-section h3 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: #333;
+}
+
+.social-link img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+}
+
+.social-link span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Social Media Specific Colors */
+.social-link:hover {
+  transform: translateY(-2px);
+  background-color:rgb(135, 228, 219);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Contact Form Section */
+.contact-form-section {
+    margin: 1cm;
+    width: 60%;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin:auto;
+
+}
+
+.contact-form-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #03715d;
+  box-shadow: 0 0 0 3px rgba(3, 113, 93, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #37b69e, #03715d);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #03715d, #025a4a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(3, 113, 93, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Map Section */
+.map-section {
+  margin: 1cm;
+  text-align: center;
+}
+
+.map-section h3 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.map-placeholder {
+  background: #f1f7f7;
+  padding: 3rem;
+  border-radius: 15px;
+  border: 2px dashed #03715d;
+  color: #666;
+}
+
+.map-placeholder p {
+  margin: 0.5rem 0;
+  font-size: 18px;
+}
+
+.map-placeholder p:first-child {
+  font-size: 1.5rem;
+  color: #03715d;
+  font-weight: bold;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-info, .business-hours {
+    padding: 1rem;
+  }
+  
+  .social-links {
+    gap: 1rem;
+  }
+  
+  .social-link {
+    min-width: 100px;
+    padding: 1rem;
+  }
+  
+  .social-link img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contact-form-section {
+    padding: 1.5rem;
+  }
+  
+  .map-placeholder {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .profile-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .profile-info p {
+    font-size: 1rem;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-link {
+    width: 200px;
+  }
+  
+  .contact-form-section {
+    padding: 1rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+  }
+}
+
